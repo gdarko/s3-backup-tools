@@ -1,21 +1,22 @@
 # Backup Tools
 
-Various backup tools for managing backups on your Linux server by utilizing s3 cloud storage.
+Backup tools that handles data backup to S3 Compatible cloud storage for you.
 
 ## Installation
 
+Follow the below step to install the software
 
-`git clone https://github.com/gdarko/s3-backup-tools`
 
-`apt install python3 python3-setuptools unzip`
-`cd tmp`
-`wget https://github.com/s3tools/s3cmd/releases/download/v2.2.0/s3cmd-2.2.0.zip`
-`unzip s3cmd-*.zip`
-`cd s3cmd-*`
-`python3 setup.py install`
+* `git clone https://github.com/gdarko/s3-backup-tools`
+* `apt install python3 python3-setuptools zip unzip`
+* `cd /tmp && wget https://github.com/s3tools/s3cmd/releases/download/v2.2.0/s3cmd-2.2.0.zip`
+* `unzip s3cmd-2.2.0.zip && cd s3cmd-2.2.0`
+* `python3 setup.py install`
 
 
 ## Configuration
+
+Next step is to configure the s3 storage credentials as follows
 
 `s3cmd --configure`
 
